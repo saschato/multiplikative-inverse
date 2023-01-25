@@ -6,7 +6,7 @@ def func(w1,w2):
 
 if __name__ == "__main__":
     pairs = []
-    m = input(" [+] enter modulo: ")
+    m = int(input(" [+] enter modulo: "))
 
     for i in range(0,m):
         pairs.append([i,m])
@@ -14,5 +14,4 @@ if __name__ == "__main__":
     for pair in pairs:
         ggT = func(pair[0],pair[1])
         if ggT != 1:
-            print(pair, "hat keine multiplikative inverse")
-    
+            print(" [+]", pair, "hat keine multiplikative inverse")
